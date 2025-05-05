@@ -1,0 +1,110 @@
+/* Общие настройки */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #9bcde4;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #222;
+  color: #ffd700;
+  text-align: center;
+  padding: 2rem;
+}
+
+header .subtitle {
+  margin: 0.9rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+  
+.intro {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    margin: 1rem 0.5rem;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} 
+  
+.primary-button {
+    background: #ffd700;
+    color: #000;
+}
+
+.secondary-button:hover {
+    background: #e6c200;
+    transform: scale(1.05);
+}
+
+.secondary-button {
+    background: transparent;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.secondary-button:hover {
+    background: #eee;
+    transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #ccc;
+  padding: 1rem;
+}
+header h1 {
+    transition: transform 0.3s ease;
+  }
+  
+  header h1:hover {
+    transform: translateY(-5px) scale(1.05);
+  }
+  .contact-title {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-title:hover {
+    transform: translateY(-2px) scale(1.03);
+  }
+  
+  /* Ключевые кадры анимации */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    
